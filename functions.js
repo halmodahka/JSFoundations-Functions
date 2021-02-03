@@ -27,14 +27,16 @@ greet(Haya);
  */
 
 function isOdd(n) {
-  // Your code here
-  if (n % 2 === 1){
-    console.log("true");}
-    else
-    console.log("false");
+  if (n % 2 === 1)
+    return true;
+
+    else {
+      return false;
+    }
   }
- isOdd(42);
- isOdd(51);
+  console.log(isOdd(42));
+  console.log(isOdd(51));
+
 
 /**
  * oddsSmallerThan(n):
@@ -46,12 +48,16 @@ function isOdd(n) {
  * oddsSmallerThan(15) -> 7
  */
 
+
+
+
 function oddsSmallerThan(n) {
-  // Your code here
- console.log(~~(n / 2.0));
-  }
-oddsSmallerThan(7);
-oddsSmallerThan(15);
+  return parseInt(n/2);
+   }
+ console.log(oddsSmallerThan(7));
+ console.log(oddsSmallerThan(15));
+
+
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -66,11 +72,13 @@ oddsSmallerThan(15);
 
 function squareOrDouble(n) {
   if (n % 2 === 1){
-    console.log(n**2);
+    return(n**2);
   }else {
-    console.log(n*2);
+    return(n+n);
   }
 }
-squareOrDouble(7)
-squareOrDouble(4)
+console.log(squareOrDouble(7));
+console.log(squareOrDouble(4));
+
+
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
