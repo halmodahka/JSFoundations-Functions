@@ -25,7 +25,7 @@ greet(Haya);
  * isOdd(7) -> true
  * isOdd(10) -> false
  */
-let num1 = 42;
+
 function isOdd(n) {
   // Your code here
   if (n % 2 === 1){
@@ -33,7 +33,8 @@ function isOdd(n) {
     else
     console.log("false");
   }
- isOdd(num1);
+ isOdd(42);
+ isOdd(51);
 
 /**
  * oddsSmallerThan(n):
@@ -44,12 +45,13 @@ function isOdd(n) {
  * oddsSmallerThan(7) -> 3
  * oddsSmallerThan(15) -> 7
  */
-let num2 = 15;
+
 function oddsSmallerThan(n) {
   // Your code here
  console.log(~~(n / 2.0));
   }
-oddsSmallerThan(num2);
+oddsSmallerThan(7);
+oddsSmallerThan(15);
 /**
  * squareOrDouble(n):
  * - receives a number n
@@ -61,7 +63,7 @@ oddsSmallerThan(num2);
  * squareOrDouble(9) -> 81
  */
 
-let num3 = 7;
+
 function squareOrDouble(n) {
   if (n % 2 === 1){
     console.log(n**2);
@@ -69,5 +71,6 @@ function squareOrDouble(n) {
     console.log(n*2);
   }
 }
-squareOrDouble(num3)
+squareOrDouble(7)
+squareOrDouble(4)
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
